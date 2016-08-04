@@ -18,7 +18,7 @@ $(function() {
         } else if (previousVal !== returnVal) {
             previousVal = returnVal;
             elem = $("#answerText").html(returnVal);
-            TweenMax.to(elem, 6, {opacity: 1});
+            TweenMax.to(elem, 4, {opacity: 1});
         }
     }
 

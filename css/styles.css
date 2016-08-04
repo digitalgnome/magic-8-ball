@@ -3,6 +3,10 @@
     src: url('../fonts/Tangerine_Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Bungee Inline';
+    src: url('../fonts/BungeeInline-Regular.ttf') format('truetype');
+}
 
 html {
     font-size: 16px;
@@ -62,10 +66,14 @@ header, section.main {
 }
 
 #answerText {
-    color: #F00;
-    font-weight: bolder;
-    font-size: 200%;
+    color: #F60505;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 215%;
     opacity: 0;
+    text-shadow: 1px 1px 2px #008;
+    text-transform: uppercase;
+    vertical-align:  middle;
 }
 
 /* #magic-8-ball {
