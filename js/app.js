@@ -27,7 +27,7 @@ $(function() {
 
         TweenMax.to("#answerText", 0, {opacity:0});
 
-        if (strLen === "" || strLen.length < 3) {
+        if (strLen.length < 3) {
             event.preventDefault();
             $("#questionText").val('');
             $("#questionText").attr("placeholder", "No question was asked");
