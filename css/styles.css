@@ -49,7 +49,7 @@ header, section.main {
 }
 
 #magic-8 {
-    background: url(/images/magic-8-ball.png);
+    background: url('../images/magic-8-ball.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
