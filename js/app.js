@@ -23,13 +23,15 @@ $(function() {
     }
 
     $("#submitBtn").submit(function(event){
-        var emptyText = $("#questionText").val();
-        if (emptyText === "" ) {
-            TweenMax.to("#answerText", 0, {opacity:0});
+        var strLen = $("#questionText").val();
+
+        TweenMax.to("#answerText", 0, {opacity:0});
+
+        if (strLen === "" || strLen.length < 3) {
             event.preventDefault();
+            $("#questionText").val('');
             $("#questionText").attr("placeholder", "No question was asked");
         } else {
-            TweenMax.to("#answerText", 0, {opacity:0});
             event.preventDefault();
             TweenMax.fromTo("#magic-8", 2, {x:-1}, {x:5, ease:RoughEase.ease.config({strength:8, points:20, template:Linear.easeNone, randomize:false}) , clearProps:"x"});
             $("#questionText").val("");
