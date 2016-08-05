@@ -1,21 +1,14 @@
+/* CSS for Magic-8-Ball Game */
+
 @font-face {
     font-family: 'Tangerine';
     src: url('../fonts/Tangerine_Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Bungee Inline';
-    src: url('../fonts/BungeeInline-Regular.ttf') format('truetype');
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
 }
-
-html {
-    font-size: 16px;
-    height:  100%;
-    margin: 0;
-    padding: 0;
-    width:  100%;
-}
-
 
 /* Websafe fonts */
 /* ***********************************************
@@ -24,6 +17,14 @@ font-family: "Times New Roman", Times, serif;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-family: Verdana, Geneva, sans-serif;
 **************************************************/
+
+html {
+    font-size: 16px;
+    height:  100%;
+    margin: 0;
+    padding: 0;
+    width:  100%;
+}
 
 body {
     background: #3D3DCC;
@@ -34,13 +35,18 @@ body {
     width: 100%;
 }
 
+div.container {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
     color:  #A2FBF8;
     font-family: 'Tangerine', serif;
     font-size: 7rem;
     font-weight:  bold;
     letter-spacing: 0.05em;
-    margin: 20px 0 15px -5%;
+    margin: 15px 0 15px -5%;
     padding: 0;
     text-shadow: 2px 2px 6px #F00;
     text-align: center;
@@ -76,13 +82,6 @@ header, section.main {
     vertical-align:  middle;
 }
 
-/* #magic-8-ball {
-    margin: 0;
-    object-fit: cover;
-    padding: 0;
-    width: auto;
-} */
-
 #question {
     text-align: center;
     margin-top: 0;
@@ -113,20 +112,36 @@ header, section.main {
    color: white;
    font-size: 18px;
    font-family: Verdana, Geneva, sans-serif;
-   margin-top: 0;
+   margin-top: -10px;
    cursor: pointer;
    text-decoration: none;
    vertical-align: middle;
-   }
+ }
 .button:hover {
    border-top-color: #28597a;
    background: #28597a;
    color: #ccc;
-   }
+ }
 .button:active {
    border-top-color: #1b435e;
    background: #1b435e;
-   }
+ }
+
+footer {
+  margin: 15px auto;
+  text-align: center;
+}
+
+footer a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: small;
+}
+
+footer a:hover {
+  color:  #A2FBF8;
+  text-decoration: underline;
+}
 
 @media only screen and (min-width: 1200px) {
     #questionText {
