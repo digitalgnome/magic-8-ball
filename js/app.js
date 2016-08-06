@@ -11,6 +11,9 @@ $(function() {
         returnVal = "",
         previousVal = "";
 
+    // set initial focus on #questionText for quick text entry
+    $("#questionText").focus();
+
     // generates random answer from the answers array
     function answer() {
         var randomNum = Math.round(Math.random() * 2);
@@ -61,5 +64,7 @@ $(function() {
             // reset placeholder string
             $("#questionText").attr("placeholder", "What's your question?");
         }
+        // return focus to #questionText
+        $("#questionText").focus();
     });
 });
