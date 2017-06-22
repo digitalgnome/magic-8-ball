@@ -1,4 +1,4 @@
-# _[Magic 8 Ball](#)_
+# _[Magic 8 Ball](https://digitalgnome.github.io/magic-8-ball/)_
 
 #### This is the second code challenge for the Ashland, Oregon JavaScript Meetup.
 
